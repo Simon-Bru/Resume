@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Simon Bruguerolle, developer">
+        <meta name="keywords" content="Web, Développement, Site, Programmeur, PHP, Javascript, CSS, Html, Application, Ingénieur">
+        <meta name="author" content="Simon Bruguerolle">
+        <!--  Tell Browser Website Is Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" href="style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+        <title>Simon Bruguerolle - Resume</title>        
+    </head>
+    <body>
+        <header class="text-center">
+            <h1>Simon Bruguerolle</h1>
+            <i class='material-icons hidden-sm'>code</i>
+        </header>
+        <!-- <h1 class="chapterTitle">My Resume</h1> -->
+        <article>
+            <h2>RESUME</h2>
+            <section id="first">
+                <h2 class="right">FULL STACK WEB DEVELOPER</h2>
+                <figure class="xs-100 w-50">
+                    <figure class="text-center">
+                        <img src="img/profile_square.jpg" alt="picture of me" class="responsive-img profile"/>     
+                    </figure>        
+                    <p>
+                        Hi ! I'm Simon, I was born the 2nd of March 1996 in south of France, 
+                        and <b>I <i class="material-icons red">favorite</i> web development</b>.
+                        I actually study computer science in ECE Paris, 
+                        but I'm also working as a freelance full-stack developper.
+                        I contribute the web by being part of the open source community.
+                    </p>
+                </figure>
+                <nav class="scroll-down xs-100">
+                    <a class="margin-auto flex align-center justify-center" href='#skills'>
+                        <i class="material-icons">keyboard_arrow_down</i>
+                    </a>
+                    <p class="margin-auto hidden unselectable">SCROLL DOWN</p>
+                </nav>
+            </section>
+            <section id="skills" class='parallax'>
+                <h2 class='display-none'>My Programming Skills</h2>
+                <table class="box">
+                    <thead>
+                        <tr>
+                            <th>My Programming Skills <i class="material-icons toggle">expand_less</i></th>
+                        </tr>           
+                    </thead>
+                    <tbody id='skillTable' class='flex expandable'>
+
+                    </tbody>
+                </table>
+            </section>
+            <section id="studies" class="text-center">
+                <h2 class="title">Education <i class="material-icons toggle">expand_less</i></h2>
+                <ol class="expandable">
+                    <li class="w-50 xs-100" data-year="2016-2019">
+                        <h4>Engineering school, <small>in ECE Paris</small></h4>
+                        
+                        <p>
+                            Information Systems and Cybersecurity speciality. 
+                            Currently in second year of the course.
+                        </p>
+                    </li>
+                    <li class="w-50 xs-left xs-100" data-year="2014-2016">
+                        <h4>Computer science DUT, <small>in Montpellier University Institute of Technology</small></h4>
+                        
+                        <p>
+                            In Montpellier/Sète University Institute of Technology. 
+                            A DUT is a 2-year technical degree after high-school.
+                        </p>
+                    </li>
+                    <li class="w-50 xs-100" data-year="2014-2016">
+                        <h4>A-level in science, <small>in Nimes</small></h4>
+                        
+                        <p>
+                            Passed with the second class honors (“mention assez bien”) at Lycée Alphonse Daudet in Nimes. 
+                            With biology as a core subject and computer science specialization.
+                        </p>
+                    </li>    
+                </ol>
+            </section>
+            <section id="works" class='parallax'>
+                <h2 class="display-none">Work Experience</h2>
+                <section class="box text-center">
+                    <h2>Work Experience <i class="material-icons toggle">expand_less</i></h2>
+                    <aside class="right addBtn text-center">Add an experience <i class="material-icons">add_circle_outline</i></aside>
+
+                    <form class="text-center h-0" id="experienceForm">
+                        <label for="role">Your role in the company:<sup>*</sup>
+                            <input type="text" name='role' id="role" placeholder="ex: developer" required>
+                            <small>Please enter a valid role</small>
+                        </label>
+                        <label for="year">The year(s) you worked here:<sup>*</sup>
+                            <input type="text" name='year' id='year' placeholder="ex: 2017" required>
+                            <small>Please enter a valid year</small>                            
+                        </label>
+                        <label for="company">The company you worked at: <sup>*</sup>
+                            <input type="text" name='company' id='company' placeholder='ex: Paypal' required>
+                            <small>Please enter a valid company</small>
+                        </label>
+                        <label for="location">The location of the company: <sup>*</sup>
+                            <input type="text" name='location' id='location' placeholder='ex: New York' required>
+                            <small>Please enter a valid location</small>
+                        </label>
+                        <label for="description">Description of your experience:<sup>*</sup>
+                            <textarea name="description" id="description" cols="30" rows="5" 
+                            class='m-auto' placeholder="Write your description here..."
+                            required></textarea>
+                            <small>Please enter a valid description</small>                            
+                        </label>
+                        <button type='submit'>
+                            Save
+                        </button>
+                    </form>
+
+                    <ol class='expandable'>
+                        <li class="w-50 xs-100" data-year="2017">
+                            <h4>Web developer internship at <i>MonBanquet</i>, <small>in Paris</small></h4>
+                            
+                            <p>
+                                Development in the developer team of the french start-up <i>MonBanquet</i>. 
+                                Full-stack development on the website 
+                                <a href="https://www.monbanquet.fr/" target="_blank">monbanquet.fr</a>,
+                                and on the company's back-office. Working with Java Spring on the back-end and MongoDB as a DBMS
+                                and with Angular on the front-end.
+                            </p>
+                        </li>
+                        <li class="w-50 xs-left xs-100" data-year="2016">
+                            <h4>Freelance development,</h4>
+                            <p>
+                                Development of new functionnalities or technical 
+                                work on websites for several clients.
+                            </p>
+                        </li>        
+                        <li class="w-50 xs-100" data-year="2016">
+                            <h4>Web developer internship at <i>Nottx</i>, <small>in London</small></h4>
+                            <p>
+                                Web development of various functionalities for the website 
+                                <a href="https://nottx.com/" target="_blank">nottx</a>
+                                including an anonymous blog ('Quest' section). Working with Php on the back-end, 
+                                and jQuery on the front-end.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+            </section>
+            <section id='contact' class="text-center">
+                <h2>Additional Information</h2>
+                <section class="inline-block box md-100">
+                    <h3 class="flex">
+                        <i class="material-icons">info_outline</i> Additional Informations
+                        <i class="right material-icons toggle">expand_less</i>
+                    </h3>
+                    <ul class='expandable'>
+                        <li><u><b>Driving Licence:</b></u> passed in 2014.</li>
+                        <li><u><b>Sports:</b></u> 15 years of judo, 5 years of skateboard, 2 years of tennis, 4 years of snowboard.</li>
+                        <li><u><b>Music:</b></u> 10 years of trumpet and big music amateur above all.</li>
+                        <li><u><b>Hobbies:</b></u> Cinema, art, video games, cooking...</li>
+                    </ul>
+                </section>
+                <section class="md-100 box inline-block">
+                    <h3 class="flex">
+                        <i class="material-icons">contacts</i> Contact informations 
+                        <i class="right material-icons toggle">expand_less</i>
+                    </h3>
+                    <address class="expandable">
+                        <dl>
+                            <dt>Phone n°</dt><dd>0621181215</dd>
+                            <dt>Mail Address</dt><dd><a href="mailto:bruguerollesimon@gmail.com">bruguerollesimon@gmail.com</a></dd>
+                            <dt>Address</dt><dd>81 Avenue de Saint-Mandé, 75012 Paris</dd>
+                        </dl>
+                    </address>
+                </section>
+                <section class="md-100 box m-auto"> 
+                    <h3 class="flex">
+                        <i class="material-icons">mail_outline</i>Get in touch
+                        <i class="right material-icons toggle">expand_less</i>                        
+                    </h3>
+                    <form id='contactForm' class='text-center expandable'>
+                        <label for="name">Your name:<sup>*</sup>
+                            <input type="text" name='name' id="name" placeholder="Full Name" required>
+                            <small>Please enter a valid name</small>
+                        </label>
+                        <label for="mail">Your mail address:<sup>*</sup>
+                            <input type="email" name='mail' id='mail' placeholder="johndoe@example.com" required>
+                            <small>Please enter a valid mail address</small>                            
+                        </label>
+                        <label for="subject">Subject: 
+                            <input type="text" name='subject' id='subject' placeholder='ex: project offer'>
+                        </label>
+                        <label for="message">Message:<sup>*</sup>
+                            <textarea name="message" id="message" cols="30" rows="5" 
+                            class='m-auto' placeholder="Write your message here..."
+                            required></textarea>
+                            <small>Please enter a valid message</small>                            
+                        </label>
+                        <i class="material-icons" id="validator">done</i>
+                        <button type='submit'>
+                            Send
+                        </button>
+                    </form>
+                </section>
+        
+            </section>
+        </article>
+        <footer class="flex align-center justify-center">
+            <nav class="scroll-down xs-100">
+                <a class="margin-auto flex align-center justify-center" href='#'>
+                    <i class="material-icons">keyboard_arrow_up</i>
+                </a>
+                <p class="margin-auto hidden unselectable">GO ON TOP</p>
+            </nav>
+    
+            <a href="https://github.com/Simon-Bru" target="_blank">
+                <figure class="text-center">
+                    <img src="img/github.png" alt="My Github">
+                    <figcaption>My Github</figcaption>
+                </figure>
+            </a>
+            <a href="https://www.linkedin.com/in/simon-bruguerolle-622907117/" target="_blank">
+                <figure class="text-center">
+                    <img src="img/linkedin.png" alt="My Linkedin">
+                    <figcaption>My Linkedin</figcaption>
+                </figure>
+            </a>
+        </footer>
+        <script type='text/javascript' src="script.js"></script>
+    </body>
+</html>
